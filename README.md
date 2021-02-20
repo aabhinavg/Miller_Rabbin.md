@@ -9,7 +9,7 @@ In this repo miller rabin primality test is discussed.
 <strong>bool isPrime(int n, int value)</strong>
 1) Handle base cases for n &lt; 3
 2) If n is even, becuase even number will be divisible by 2 return false.
-3) Find an odd number d such that n-1 can be written as d*2<sup>r</sup>. 
+3) Find any odd number d such that n-1 can be express or written as d*2<sup>r</sup>. 
    Note that since n is odd, (n-1) must be even and r must be 
    greater than 0.
 4) Do following k times
@@ -22,7 +22,7 @@ In this repo miller rabin primality test is discussed.
 // prime.  
 // d is an odd number such that  d*2<sup>r</sup> = n-1 for some r &gt;= 1</font>
 <strong>bool millerTest(int n, int d)</strong>
-1) Pick a random number 'a' in range [2, n-2]
+1) Select any number 'a' between [2, n-2]
 2) Compute: x = pow(a, d) % n
 3) If x == 1 or x == n-1, return true.
 
