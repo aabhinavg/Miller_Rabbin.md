@@ -22,7 +22,7 @@ In this repo miller rabin primality test is discussed.
 // prime.  
 // d is an odd number such that  d*2<sup>r</sup> = n-1 for some r &gt;= 1</font>
 <strong>bool millerTest(int n, int d)</strong>
-1) Select any number 'a' between [2, n-2]
+1) Select number 'a' between range [2, n-2]
 2) Compute: x = pow(a, d) % n
 3) If x == 1 or x == n-1, return true.
 
@@ -40,7 +40,7 @@ Input: n = 13,  value = 2.
 2) Call millerTest value times.
 
 <strong>1<sup>st</sup> Iteration:</strong>
-1) Pick a random number 'a' in range [2, n-2]
+1) Select number 'a' between range [2, n-2]
       Suppose a = 4
 
 2) Compute: x = pow(a, d) % n
